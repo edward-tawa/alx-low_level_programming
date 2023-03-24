@@ -1,9 +1,7 @@
 #include "main.h"
 /**
-* largest_number - returns the largest of 3 numbers
-* @a: first integer
-* @b: second integer
-* @c: third integer
+* positive_or_negative - returns the largest of 3 numbers
+* @i: function parameter
 * Return: largest number
 */
 
