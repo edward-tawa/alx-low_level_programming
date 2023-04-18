@@ -15,9 +15,14 @@ struct dog
 	char owner;
 };
 
+/**
+ * dog_d - typedef for struct dog
+ */
+typedef struct dog dog_d;
 
 
 
 
 
-endif
+
+#endif
