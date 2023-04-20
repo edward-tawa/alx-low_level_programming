@@ -1,9 +1,11 @@
 #include<stdarg.h>
 #include "variadic_functions.h"
+
 /**
  * sum_them_all - function that sums variable number of its arguments
  * @n:  last fixed argument
  * @...: number of paramters to calculate the sum
+ *
  * Return: sum of all arguments
  */
 
@@ -19,6 +21,8 @@ int sum_them_all(const unsigned int n, ...)
 	{
 		sum += va_arg(ptr, unsigned int);
 	}
+
 	va_end(ptr);
+
 	return (sum);
 }
