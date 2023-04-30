@@ -3,7 +3,7 @@
 #include<stdio.h>
 
 /**
- * add_nodeint - function that adds a new node at the beginning of a linked list
+ * add_nodeint - function that adds a new node at the beginning linked list
  * @head: starting node in the linked list
  * @n: data to insert as the new head of the linked list
  * Return: return new node or NULL
