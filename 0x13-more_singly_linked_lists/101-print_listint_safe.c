@@ -1,6 +1,6 @@
 #include "lists.h"
 #include<stdlib.h>
-#include <stdio.h>
+#include<stdio.h>
 
 /**
  * looped_listint_len - function that counts the number of unique nodes
@@ -28,7 +28,7 @@ size_t looped_listint_len(const listint_t *head)
 			{
 				nodes++;
 				slow = slow->next;
-				fast = (fast->next)->next;
+				fast = fast->next;
 			}
 
 			slow = slow->next;
