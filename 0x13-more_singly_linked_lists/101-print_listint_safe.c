@@ -48,3 +48,41 @@ size_t looped_listint_len(const listint_t *head)
 	return (0);
 }
 
+
+
+/**
+ * print_listint_safe - function that prints a listint_t list safely.
+ * @head: pointer to the starting node
+ * Return: number of nodes
+ */
+size_t print_listint_safe(const listint_t *head)
+{
+	size_t nodes, i = 0;
+
+	nodes = looped_listint_len(head);
+
+	if (nodes == 0)
+	{
+		while (head != NULL)
+		{
+			printf("[%p] %d\n", (void *)head, head->n);
+			head = head->next;
+			nodes++;
+		}
+	}
+
+	else
+	{
+		while (i < nodes)
+		{
+			printf("[%p] %d\n", (void *)head, head->n);
+			head = head->next;
+			i++;
+		}
+
+		printf("-> [%p] %d\n", (void *)head, head->n);
+	}
+
+	return (nodes);
+}
+
