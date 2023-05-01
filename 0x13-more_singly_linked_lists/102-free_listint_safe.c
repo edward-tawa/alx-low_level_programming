@@ -8,9 +8,9 @@
  */
 size_t free_listint_safe(listint_t **h)
 {
-	size_t length = 0;
 	int addr_diff;
 	listint_t *temp;
+	size_t length = 0;
 
 	if (h == NULL || *h == NULL)
 		return (0);
