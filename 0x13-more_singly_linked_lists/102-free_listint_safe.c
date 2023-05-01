@@ -12,10 +12,10 @@ size_t free_listint_safe(listint_t **h)
 	listint_t *temp;
 	size_t length = 0;
 
-	if (h == NULL || *h == NULL)
+	if (!h || !*h)
 		return (0);
 
-	while (*h == NULL)
+	while (*h != NULL)
 	{
 		addr_diff = *h - (*h)->next;
 		if (addr_diff > 0)
