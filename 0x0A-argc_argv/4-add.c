@@ -13,7 +13,7 @@ int check_num(char *str)
 	unsigned int count;
 
 	count = 0;
-	while (count < strlen(str)) 
+	while (count < strlen(str))
 
 	{
 		if (!isdigit(str[count]))
@@ -30,7 +30,6 @@ int check_num(char *str)
  * main - Print the name of the program
  * @argc: Count arguments
  * @argv: Arguments
- *
  * Return: Always 0 (Success)
  */
 
@@ -48,7 +47,7 @@ int main(int argc, char *argv[])
 		if (check_num(argv[count]))
 
 		{
-			str_to_int = atoi(argv[count]); 
+			str_to_int = atoi(argv[count]);
 			sum += str_to_int;
 		}
 
