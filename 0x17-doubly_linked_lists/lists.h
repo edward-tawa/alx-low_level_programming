@@ -29,7 +29,7 @@ int pop_dlistint(dlistint_t **head);
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index);
 int sum_dlistint(dlistint_t *head);
 dlistint_t *insert_dnodint_t_index(dlistint_t **head, unsigned int idx, int n);
-int delete_nodeint_at_index(dlistint_t **head, unsigned int index);
+int delete_dnodeint_at_index(dlistint_t **head, unsigned int index);
 dlistint_t *reverse_dlistint(dlistint_t **head);
 size_t print_dlistint_safe(const dlistint_t *head);
 size_t free_dlistint_safe(dlistint_t **h);
