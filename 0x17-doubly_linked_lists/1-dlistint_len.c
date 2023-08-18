@@ -1,17 +1,16 @@
 #include "lists.h"
 
 /**
- * print_dlistint - prints all the elements of a linked list
- * @h: linked list of type listint_t to print
+ * dlistint_len - returns the number of elements in a linked lists
+ * @h: linked list of type listint_t to traverse
  * Return: number of nodes
  */
-size_t print_dlistint(const dlistint_t *h)
+size_t dlistint_len(const dlistint_t *h)
 {
 	size_t num = 0;
 
 	while (h)
 	{
-		printf("%d\n", h->n);
 		num++;
 		h = h->next;
 	}
